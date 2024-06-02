@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube Page Loading</title>
+    <link rel="icon" href="imgs/YouTube-LOGO.ico">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tilt+Prism">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="All">
+    <a href="https://www.youtube.com/">
+        <img title="YouTube Link and Logo" src="imgs/YouTube-LOGO.png" alt="YouTube Logo" style="float:left;width:50px;height:30px;">
+    </a>
+
+    <div class="TopLeft">
+        <a href="https://www.youtube.com/">
+            <small title="Website Name"><b>YOUTUBE</b></small>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="Main">
+            <p title="Main Title">LOADING QUICKLY</p>
+        </div>
+
+        <!-- 新增的轉圈 -->
+        <div class="spinner"></div>
+
+        <div class="Bottom">
+            <p title="Waiting Time">Please Wait For A Few Seconds</p>
+        </div>
+
+        <!-- 新增一個div包裹按鈕 -->
+        <div class="button-container">
+            <button onclick="toggleMusic()">Play/Pause Music</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- 新增音樂播放器 -->
+<audio id="Music" src="mp3/ChantTheSutras.mp3" loop></audio>
+<script src="script.js"></script>
+<!-- 新增音樂播放器，結束 -->
+
+</body>
+</html>

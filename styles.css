@@ -1,0 +1,86 @@
+body {
+    background-color: black;
+    /*
+    background-image: url('imgs/YoutubeNoWiFi.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    */
+}
+
+.All {
+    font-family: "Tilt Prism", sans-serif;
+    /*
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+            "XROT" 0,
+            "YROT" 0;
+    */
+}
+
+.TopLeft {
+    font-size: 23px;
+    color: white;
+}
+
+/* 新增的連結樣式，顯示白色字體，去除文字底線 */
+.TopLeft a {
+    color: white;
+    text-decoration: none;
+}
+/* 新增的連結樣式，結束 */
+
+.Main {
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
+
+/* 新增的動畫樣式，載入中的轉圈 */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spinner {
+    margin: 0 auto;
+    border: 10px solid #ffffff;
+    border-top: 10px solid #6e6c6c;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    animation: spin 1.5s linear infinite;
+}
+/* 新增的動畫樣式，結束 */
+
+/* Flexbox調整，置中 */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Flexbox調整，結束 */
+
+.Bottom {
+    text-align: center;
+    font-size: 25px;
+    color: red;
+}
+
+/* Flexbox調整，使按鈕置中 */
+.button-container {
+    margin-top: 20px; /* 調整按鈕與其他內容的間距 */
+    text-align: center; /* 將按鈕置中 */
+}
+/* Flexbox調整，使按鈕置中，結束 */
+
+/* 媒體查詢，當螢幕寬度小於600px時，按鈕大小變小 */
+@media screen and (max-width: 500px) {
+    .button-container button {
+        font-size: 15px; /* 按鈕文字大小調整為14px */
+        padding: 5px 10px; /* 按鈕內邊距調整 */
+    }
+}
+/* 媒體查詢，當螢幕寬度小於600px時，按鈕大小變小，結束 */
